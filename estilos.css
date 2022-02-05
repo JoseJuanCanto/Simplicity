@@ -1,4 +1,4 @@
-* {padding: 0; margin: 0; font-family: 'Playfair Display', serif;}
+* {padding: 0; margin: 0; font-family: 'Playfair Display', serif;box-sizing: border-box;}
 /* HEADER */
   .nav-bar {
     /* background: rgb(0, 17, 48); */
@@ -54,34 +54,95 @@
     text-decoration: none;
   }
  .button-a {
-  align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 1rem;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 8px 20px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 1rem;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 8px 20px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .nav-mobile{
+    display: none;
+  }
 
 /* *********** media queries *********** */
-@media all and (max-width: 1200px) {
- 
-
+@media all and (max-width: 1217px) {
+  .nav-bar{display: none;}
+  .nav-mobile{
+    background-image: linear-gradient(144deg,#07010c, #201279 50%,#02085a);
+    height: 100vh;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+  .nav-mobile .nav-elem{
+    font-size: 1.5rem;
+    color: white;
+  }
+  .nav-mobile .nav-elem:hover {
+    color: rgba(159, 62, 172, 0.562);
+  }
+  .burguer {
+    background:rgba(0, 0, 0, 0);
+    border: none;
+    position: absolute;
+    color: white;
+    width: 100px;
+    height: 100px;
+    right: 10px;
+  }
+  .burguer i {
+    font-size: 5rem;
+    position: absolute;
+    right:8px;
+    top: 5px;
+  }
+  .logo{
+    font-size: 2.5rem;
+  }
+  .button-a {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 1.5rem;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 8px 20px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  /* Transición de los svg del burguer-menú */
+  .bi-list {
+    display: none;
+  }
 }
 /* ---------------------------------------------------------------------------- */
 /* MAIN */

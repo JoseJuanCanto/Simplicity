@@ -38,12 +38,22 @@
   .nav-elem {
     font-size: 1rem;
     margin: auto;
+    cursor: pointer;
+
   }
   .nav-elem:hover {
     color: rgba(159, 62, 172, 0.562);
+    font-size: 1.2rem;
   }
+  a {
+    text-decoration: none;
+    cursor: pointer;
 
-.button-a {
+  }
+  button {
+    text-decoration: none;
+  }
+ .button-a {
   align-items: center;
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
   border: 0;
@@ -66,18 +76,7 @@
   white-space: nowrap;
   cursor: pointer;
 }
-.button-a:active,
-.button-a:hover {
-  outline: 0;
-}
 
-.b1, .b2, .b3{
-  width: 90%;
-  height: 400px;
-  background-color: cadetblue;
-  border: solid 1px black;
-  margin: auto;
-}
 
 /* *********** media queries *********** */
 @media all and (max-width: 1200px) {
@@ -87,7 +86,13 @@
 /* ---------------------------------------------------------------------------- */
 /* MAIN */
 
-
+.b1, .b2, .b3{
+  width: 90%;
+  height: 400px;
+  background-color: cadetblue;
+  border: solid 1px black;
+  margin: auto;
+}
 
 /* ---------------------------------------------------------------------------- */
 /* FOOTER */

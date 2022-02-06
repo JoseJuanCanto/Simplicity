@@ -82,6 +82,33 @@ nav{
     margin: 5px;
     transition: all 1s ease;
 }
+.banner{
+    display: grid;
+    width: 100%;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+.b-img img{
+    width: 90%;
+    height: auto;
+}
+.b-text{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+/* .b-h{ ç*/
+
+.b-ul{
+    list-style: none;
+}
+.b-ul li::before{
+    content: '✓';
+}
+
 
 @media screen and (max-width:1024px) {
     .nav-links{

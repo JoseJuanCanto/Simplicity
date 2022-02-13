@@ -12,38 +12,66 @@
     <title>Registro</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">SIMPLICITY</a>
+    <form action="registro" class="registro">
+        <div id="logo">
+            <i class="bi bi-person"></i>
+            <a href="index.html">SIMPLICITY</a>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label for="nombre-apellidos">Nombre completo</label>
             </div>
-            <ul class="nav-links">
-                <li>
-                    <a href="servicios.html">¿Qué ofrecemos?<i class="bi bi-boxes"></i></a>
-                </li>
-                <li>
-                    <a href="precios.html">Precios<i class="bi bi-wallet2"></i></a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Sobre nosotros<i class="bi bi-info-circle"></i></a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto<i class="bi bi-chat"></i> </a>
-                </li>
-                <li>
-                    <a href="login.html" class="button">Área Personal <i class="bi bi-box-arrow-in-right"></i></a>
-                </li>
+            <div class="input">
+                <input type="text" name="nombre-apellidos" id="nombre-apellidos" placeholder="Introduce tu nombre y apellidos" size="40" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label for="telefono">Teléfono</label>
+            </div>
+            <div class="input">
+                <input type="tel" name="telefono" id="telefono" placeholder="Introduce tu número de teléfono" size="40" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label for="correo">Email</label>
+            </div>
+            <div class="input">
+                <input type="email" name="correo" id="correo" placeholder="Introduce tu correo electrónico" size="40" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label for="contrasenya">Contraseña</label>
+            </div>
+            <div class="input">
+                <input type="password" placeholder="Constraseña" size="40" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label for="contrasenya2">Comprueba la contraseña introducida</label>
+            </div>
+            <div class="input">
+                <input type="password" placeholder="Introduce de nuevo la constraseña" size="40" required>
+            </div>
+        </div>
+        <div class="submit">
+            <input type="submit" value="EMPEZAR PRUEBA GRATUITA">
+        </div>
+        <div class="row">
+            <p>o inicia sesión con</p>
+        </div>
+        <div class="row">
+            <ul>
+                <li><a href="#"><i class="bi bi-apple"></i></a></li>
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-google"></i></a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- FORMULARIO -->
-    </main>
+        </div>
+        <p class="texto-pequenyo">¿Ya tienes una cuenta? <a href="login.html" id="enlace">Acceder</a></p>
+    </form>
     <script src="main.js"></script>
 </body>
 </html>

@@ -10,10 +10,9 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 18vh;
     /* background-image: linear-gradient(144deg,#07010c, #201279 50%,#02085a); */
     background-color: #16096e;
-    min-height: 80px;
 }
 .logo{
     color: rgb(226, 226, 226);
@@ -86,6 +85,7 @@ main {
 }
 .promo{
     text-align: center;
+    padding-bottom: 30px;
 }
 .promo h1 {
     font-weight: bold;
@@ -94,14 +94,14 @@ main {
 }
 .promo .boton-main{
     text-decoration: none;
-    background-color: #4181fa;
+    background-color: #50a7f8;
     color: #FFFFFF;
     padding: 12px 20px;
     border-radius: 8px;
 }
 #enlace-prueba{
     text-decoration: none;
-    color: #4181fa;
+    color: #50a7f8;
 }
 .banner{
     display: grid;
@@ -112,6 +112,8 @@ main {
     justify-content: center;
     margin: auto;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .b-img img{
     width: 90%;
@@ -134,13 +136,228 @@ main {
 .b-ul li::before{
     content: '✓';
 }
+.valoraciones{
+    background-color: #f4f4f5;
+    width: 100%;
+    height: 110vh;
+    text-align: center;
+}
+.valoraciones h2{
+    padding-top: 80px;
+    font-size: 1.6rem;
+}
+.valoraciones p{
+    padding-bottom: 50px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    color: #FFFFFF;
+}
+.card{
+    width:250px;
+    height:250px;
+    background: rgba(0,0,0,0);
+    margin: 20px 0px 0px 30px;
+    border-radius: 20px;
+}
+  .front{
+    width:250px;
+    height:250px;
+    background: #fff;
+    margin: 0px;
+    position:absolute;
+    transition: all 1s ease;
+    font-size:1rem;
+    border-radius: 20px;
+    border: 3px solid #50a7f8;
+    flex-wrap: wrap;
+    color: #1d1d1d;
+  }
+  .back{
+    width:250px;
+    height:250px;
+    background: rgba(255, 255, 255, 0);
+    margin: 0px;
+    position:absolute;
+    transition: all 1s ease;
+    opacity: 0;
+    border-radius: 20px;
+    border: 3px solid #50a7f8;
+  }
+  .card:hover .front {
+    transform: rotate3D(1, 1, 1, 360deg);
+    background: rgba(20,180,80,0);
+    font-size:0px;
+  }
+  .card:hover .back {
+    background: #fff;
+    transform: rotate3D(1, 1, 1, 360deg);
+    font-size:1rem;
+    color: #1d1d1d; 
+    opacity: 1;
+  }
+  .front img{
+      height:auto;
+      width: 88%;
+      object-fit: scale-down;
+  }
+  .front h2{
+    height: 20px;
+    top: -20px;
+  }
+  .estrellas{
+      display: inline-block;
+      color: #50a7f8;
+  }
 .footer{
     width: 100%;
-    height: 60vh;
-    background-image: linear-gradient(144deg,#07010c, #201279 50%,#02085a);
+    height: 35vh;
+    background-image: linear-gradient(144deg,#000000, #110750 50%,#240272);
+    color: #dfdede;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
 }
+.footer-col{
+    text-align: center;
+}
+.footer-col > * {
+    margin-top: 10px;
+}
+.footer-col h2{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.footer-col ul{
+    list-style: none;
+    display: inline-flex;
+}
+.footer-col ul li a{
+    color: #50a7f8 ;
+    margin: 0 10px;
+}
+#submit{
+    background-color: #50a7f8;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 0px;
+}
+/* -------------------------------- Login.html -------------------------------------------------------------------- */
+.registro{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    height: auto;
+    align-items: flex-start;
+    padding: 20px 0px;
+}
+.registro #logo{
+    display: inline-flex;
+    align-self: start;
+}
+.registro a, .registro i{
+    font-size: 2rem;
+    padding: 0px 5px;
+    color: #50a7f8;
+    text-decoration: none;
+    font-family: 'Rowdies', cursive;
+}
+form > *{
+    margin: 10px 0;
+}
+form .row .label{
+    width: 100%;
+    color: #666666;
+}
+form .row .label a{
+    font-size: 0.65rem;
+    color: #50a7f8;
+    margin-left: 90px;
+}
+form .row .input input{
+    border-radius: 10px;
+    background-color: #f5f3f3;
+    border: none;
+    height: 2.2rem;
+    color: #dfdede;
+}
+input::placeholder{
+    color: #969494;
+    padding-left: 10px;
+}
+form .row .input input:focus {
+    border: 1px solid #50a7f8;
+    color: #292929;
+    background-color: #FFFFFF;
+}
+form .row .input input:focus-visible{
+    outline: none;
+}
+.submit input{
+    background-color: #50a7f8;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    width: 340%;
+    height: 40px;
+}
+.row p{
+    color: #969494;
+    float: left; 
+    margin-left: 110px;
+    margin-top: 20px;
+}
+.row ul{
+    list-style: none;
+    display: inline-flex;
+}
+.row ul li{
+    width: 100px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #9b9b9b;
+    border-radius: 10px;
+    margin-left: 25px;
+    position: relative;
+}
+.row ul li:hover{
+    background-color: #e2e2e2;
+}
+.row ul li a i{
+    text-align: center;
+    padding-left: 25px;
+    position: absolute;
+    margin-top: -5px;
+}
+.texto-pequenyo{
+    margin-left: 60px;
+    font-size: 0.8rem;
+    color: #969494;
+}
+.texto-pequenyo a{
+    font-size: 0.7rem;
+}
+/* ----------------------------- Register.html  ------------------------------------------------------------------- */
+
 
 /* ---------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:1200px) {
+    .footer-col h2{
+        font-size: 1rem;
+    }
+    #submit{
+        padding: 8px 10px;
+    }
+}
+
 @media screen and (max-width:1024px) {
     .nav-links{
         width: 80%;
@@ -191,6 +408,53 @@ main {
     .nav-links li a.button i {
         display: block;
     }
+    .footer{
+        height: 40vh;
+    }
+    .card{
+        width: 200px;
+    }
+    .front{
+        width: 200px;
+    }
+    .back{
+        width: 200px;
+    }
+    .banner{
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .card{
+        width: 180px;
+        height: 200px;
+    }
+    .front{
+        width: 180px;
+        height: 200px;
+
+    }
+    .back{
+        width: 180px;
+        height: 200px;
+    }
+    .front img{
+        width: 80%;
+    }
+    .texto-pequenyo{
+        margin-left: 0px;
+    }
+    .registro{
+        width: 100%;
+        padding: 0 20%;
+    }
+}
+
+@media screen and (max-width:703px) {
+    .row p{
+        margin: 0px;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -202,6 +466,39 @@ main {
     }
     .nav-links li {
         font-size: 0.8rem;
+    }
+    *{
+        font-size: 0.9rem;
+    }
+    .cards{
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+    margin: 0 27%;
+    }
+    .valoraciones{
+        height: auto;
+    }
+    .row ul{
+        list-style: none;
+        display: inline-flex;
+    }
+    .row ul li{
+        width: 60px;
+        height: 35px;
+        background: #fff;
+        border: 1px solid #9b9b9b;
+        border-radius: 10px;
+        margin-left: 25px;
+        position: relative;
+    }
+    .row ul li:hover{
+        background-color: #e2e2e2;
+    }
+    .row ul li a i{
+        text-align: center;
+        padding-left: 10px;
+        position: absolute;
+        margin-top: -5px;
     }
 }
 

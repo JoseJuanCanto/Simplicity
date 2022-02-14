@@ -21,3 +21,17 @@ const navSlide = () => {
 }
 
 navSlide();
+// ---------------------------------------------------------------------------------------------------
+let precioBase = 30;
+const total = document.getElementById('total');
+
+function calcula (checkboxElem) {
+
+    if (checkboxElem.checked) {
+        precioBase += parseInt(checkboxElem.value);
+        total.innerHTML = 'Cuota mensual TOTAL: ' + precioBase +'€'
+    } else {    
+        precioBase -= parseInt(checkboxElem.value);
+        total.innerHTML = 'Cuota mensual TOTAL: ' + precioBase +'€'
+    }
+}

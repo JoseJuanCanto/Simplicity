@@ -53,8 +53,36 @@
     <!-- Voy a hacer un calculador de precio con Js. Un formulario con opciones, precio base 30€ 
             y si seleccionan ampliaciones pues sumará 5€ al precio mensual. -->
     <div class="calculadora">
-
+        <div class="row1">
+            <h1>Cuota mensual en base a las necesidades de tu empresa</h1>
         </div>
+        <div class="row2">
+            <form class="izquierda">
+                <div class="rowcenter">
+                    <p>SIMPLICITY: 30€</p>
+                </div>
+                <div class="row3">
+                    <label for="control-horario">Control de horarios: +10€</label>
+                    <input type="checkbox" name="control-horario" id="control-horario" value="10" oninput="calcula(this)">
+                </div>
+                <div class="row3">
+                    <label for="firma-electronica">Firma electrónica: +4€</label>
+                    <input type="checkbox" name="firma-electronica" id="firma-electronica" value="4" oninput="calcula(this)">
+                </div>
+                <div class="row3">
+                    <label for="tickets">Tickets y gastos :+6€</label>
+                    <input type="checkbox" name="tickets" id="tickets" value="6" oninput="calcula(this)">
+                </div>
+                <div class="row3">
+                    <label for="contratos">Gestión de contratos: +5€</label>
+                    <input type="checkbox" name="contratos" id="contratos" value="5" oninput="calcula(this)">
+                </div>
+            </form>
+            <div class="derecha">
+                <h2 id="total">Cuota mensual TOTAL: 30€</h2> 
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="footer">
             <div class="footer-col">

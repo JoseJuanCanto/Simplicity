@@ -486,13 +486,61 @@ form .row .input input:focus-visible{
     color: #1d1d1d;
 }
 .calculadora{
-    margin: auto;
-    min-height: 100vh;
-    width: 95%;
-    max-width: 1200px;
-    background: rgb(172,112,252);
-    background: linear-gradient(90deg, rgba(172,112,252,1) 0%, rgba(89,138,218,1) 62%, rgba(112,190,255,1) 100%);
     border-radius: 50px;
+    margin: auto;
+    margin-bottom: 5vh;
+    min-height: 80vh;
+    width: 90%;
+    max-width: 1200px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+.calculadora h1{
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    margin: auto;
+    text-align: center;
+    padding-top: 4vh;
+}
+.calculadora .row2{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    text-align: center;
+    font-weight: bold;
+    color: #dfdede;
+    padding-top: 5vh;
+}
+.derecha h2{
+    font-size: 1.4rem;
+}
+.izquierda {
+    margin: auto;
+    width: 100%;
+}
+.rowcenter{
+    margin: auto;
+}
+.row2 .izquierda > * input {
+    width: 5vh;
+    height: 5vh;
+    cursor: pointer;
+    margin-left: 5vh;
+}
+.row3{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 40%;
+    margin: auto;
+}
+.row3 label{
+    text-align: end;
+}
+.izquierda p {
+    font-size: 1.2rem;
+    margin: auto;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------- */
@@ -612,6 +660,9 @@ form .row .input input:focus-visible{
     .promo-servicios{
         margin-top: 20vh;
     }
+    .row3{
+        width: 55%;
+    }
 }
 
 @media screen and (max-width:703px) {
@@ -688,6 +739,17 @@ form .row .input input:focus-visible{
     }
     .service{
         min-height: 300px;
+    }
+    .row3{
+        width: 60%;
+    }
+}
+@media screen and (max-width:500px) {
+    .row3 label{
+        font-size: 0.8rem;
+    }
+    .row3{
+        width: 80%;
     }
 }
 

@@ -124,7 +124,7 @@ main {
     text-align: left;
 }
 .b-text h1{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight:bold;
 }
 .b-ul{
@@ -254,7 +254,7 @@ main {
 .login{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
     margin: auto;
     height: auto;
     align-items: flex-start;
@@ -388,7 +388,7 @@ form .row .input input:focus-visible{
     max-height: 100vh;
 }
 .desc1 h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 0px;
 }
@@ -472,7 +472,7 @@ form .row .input input:focus-visible{
     padding-bottom: 8vh;
 }
 .banner-precio h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 5vh;
 }
@@ -542,8 +542,51 @@ form .row .input input:focus-visible{
     font-size: 1.2rem;
     margin: auto;
 }
+/* ----------------------- Contacto.html -------------------------------------------------------------------- */
+#main-contacto{
+    width: 90%;
+    display: grid;
+    grid-template-rows:1fr 8fr;
+    text-align: center;
+}
+#main-contacto h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.form-container img{
+    max-width: 400px;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    resize: none;
+}
+.form-container form > *{
+    border: 1px solid #5B42F3;
+    border-radius: 30px;
+    box-shadow: 12px 14px 14px -10px rgba(91,66,243,0.6);
+    padding-left: 10px;
+}
+.form-container form p {
+    border: none;
+    box-shadow: none;
+}
+input[type=submit] {
+    width: 160px;
+    margin: auto;
+    background-color: #50a7f8;
+    border: none;
+    box-shadow: none;
+    color: white;
+}
 
-/* ---------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:1200px) {
     .footer-col h2{
         font-size: 1rem;
@@ -663,6 +706,9 @@ form .row .input input:focus-visible{
     .row3{
         width: 55%;
     }
+    .login{
+        margin-left: 25%;
+    }
 }
 
 @media screen and (max-width:703px) {
@@ -685,6 +731,9 @@ form .row .input input:focus-visible{
     .ban-servicios{
         min-height: 36  0px;
         margin-bottom: 30px;
+    }
+    .login{
+        margin-left: 20%;
     }
 }
 

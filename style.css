@@ -10,7 +10,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 15vh;
+    min-height: 12vh;
     /* background-image: linear-gradient(144deg,#07010c, #201279 50%,#02085a); */
     background-color: #16096e;
 }
@@ -139,7 +139,7 @@ main {
 .valoraciones{
     background-color: #f4f4f5;
     width: 100%;
-    height: 110vh;
+    height: 80vh;
     text-align: center;
 }
 .valoraciones h2{
@@ -218,11 +218,14 @@ main {
   }
 .footer{
     width: 100%;
-    height: 30vh;
+    height: 21vh;
     background-image: linear-gradient(144deg,#000000, #110750 50%,#240272);
     color: #dfdede;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
+}
+.footer-col img{
+    width: 90%;
 }
 .footer-col{
     text-align: center;
@@ -245,7 +248,7 @@ main {
 #submit{
     background-color: #50a7f8;
     color: #FFFFFF;
-    padding: 12px 20px;
+    padding: 8px 10px;
     border-radius: 8px;
     border: 0px;
     cursor: pointer;
@@ -258,7 +261,7 @@ main {
     margin: auto;
     height: auto;
     align-items: flex-start;
-    padding: 20px 0px;
+    padding: 50px 0px;
 }
 .login #logo{
     display: inline-flex;
@@ -350,7 +353,7 @@ form .row .input input:focus-visible{
 .registro{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
     margin: auto;
     height: auto;
     align-items: flex-start;
@@ -400,7 +403,7 @@ form .row .input input:focus-visible{
 }
 .desc1 p#text-p{
     color: #292929;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 .ban-servicios{
     display: grid;
@@ -423,7 +426,7 @@ form .row .input input:focus-visible{
 }
 .promo-servicios{
     width: 80%;
-    padding-top: 20vh;
+    padding-top: 10vh;
     margin: auto;
 }
 .promo-servicios h1{
@@ -438,11 +441,11 @@ form .row .input input:focus-visible{
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 80%;
-    min-height: 150vh;
+    height: 120vh;
     margin: auto;
     text-align: center;
     align-items: center;
-    grid-column-gap: 30px;
+    grid-column-gap: 60px;
 }
 .service{
     border: 1px solid #5B42F3;
@@ -489,7 +492,7 @@ form .row .input input:focus-visible{
     border-radius: 50px;
     margin: auto;
     margin-bottom: 5vh;
-    min-height: 80vh;
+    min-height: 60vh;
     width: 90%;
     max-width: 1200px;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
@@ -522,6 +525,7 @@ form .row .input input:focus-visible{
 }
 .rowcenter{
     margin: auto;
+    width: 50%;
 }
 .row2 .izquierda > * input {
     width: 5vh;
@@ -532,14 +536,15 @@ form .row .input input:focus-visible{
 .row3{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    width: 40%;
+    width: 50%;
     margin: auto;
 }
 .row3 label{
     text-align: end;
+    font-size: 1.2rem;
 }
 .izquierda p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: auto;
 }
 /* ----------------------- Contacto.html -------------------------------------------------------------------- */
@@ -556,6 +561,7 @@ form .row .input input:focus-visible{
 .form-container{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    max-height: 800px;
 }
 .form-container img{
     max-width: 400px;
@@ -585,7 +591,24 @@ input[type=submit] {
     box-shadow: none;
     color: white;
 }
-
+/* ----------------------------------- nosotros.html -------------------------------------------------------- */
+#nosotros-container{
+    margin: auto;
+    padding: 80px 0px 200px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#nosotros-container h1{
+    font-size: 2.2rem;
+}
+#nosotros-container p{
+    margin-top: 50px;
+    line-height: 2em;
+}
 /* ---------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:1200px) {
     .footer-col h2{
@@ -593,6 +616,12 @@ input[type=submit] {
     }
     #submit{
         padding: 8px 10px;
+    }
+}
+@media screen and (max-width:1120px) {
+    .service img{
+        height: 28vh;
+        width: auto;
     }
 }
 
@@ -610,6 +639,12 @@ input[type=submit] {
     .banner {
         height: auto;
         margin-top: 50px;
+    }
+    .row2 .izquierda > * input {
+        width: 3vh;
+        height: 3vh;
+        cursor: pointer;
+        margin-left: 5vh;
     }
 }
 
@@ -646,9 +681,6 @@ input[type=submit] {
     .nav-links li a.button i {
         display: block;
     }
-    .footer{
-        height: 40vh;
-    }
     .card{
         width: 200px;
     }
@@ -671,6 +703,31 @@ input[type=submit] {
     }
     .ban{
         height: 300px;
+    }
+    .service img{
+        height: 24vh;
+        width: auto;
+    }
+    .form-container form p {
+        font-size: 0.8rem;
+    }
+    .row3 label{
+        font-size: 1rem;
+    }
+    .calculadora{
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width:842px) {
+    #main-contacto{
+        height: 950px;
+    }
+    #main-contacto h1{
+        font-size: 1.8rem;
+    }   
+    .row3{
+        width: 70%;
     }
 }
 
@@ -700,17 +757,27 @@ input[type=submit] {
     .grid-servicios{
     max-width: 100%;
     }
-    .promo-servicios{
-        margin-top: 20vh;
-    }
-    .row3{
-        width: 55%;
-    }
     .login{
         margin-left: 25%;
     }
+    .footer{
+        height: 22vh;
+    }
+    .footer-col h2{
+        font-size: 0.9rem;
+    }
+    .footer-col p{
+        font-size: 0.8rem;
+    }
+    .form-container img{
+        width: 360px;
+    }
 }
-
+@media screen and (max-width:760px) {
+    .form-container{
+        margin-top: 50px;
+    } 
+}
 @media screen and (max-width:703px) {
     .row p{
         margin: 0px;
@@ -718,12 +785,16 @@ input[type=submit] {
     .grid-servicios{
         grid-column-gap: 15px;
     }
+    .form-container img{
+        width: 300px;
+    }
 }
 @media screen and (max-width:660px) {
     .grid-servicios{
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
         max-width: 50%;
+        height: 200vh;
     }
     .ban p{
         font-size: 0.8rem;
@@ -734,6 +805,17 @@ input[type=submit] {
     }
     .login{
         margin-left: 20%;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+        padding-bottom: 20px;
+        margin: 0 27%;
+    }
+    .valoraciones{
+        height: 110vh;
+    }
+    .form-container img{
+        width: 280px;
     }
 }
 
@@ -749,11 +831,6 @@ input[type=submit] {
     }
     *{
         font-size: 0.9rem;
-    }
-    .cards{
-    grid-template-columns: 1fr;
-    padding-bottom: 20px;
-    margin: 0 27%;
     }
     .valoraciones{
         height: auto;
@@ -792,6 +869,20 @@ input[type=submit] {
     .row3{
         width: 60%;
     }
+    #main-contacto{
+        height: 810px;
+    }
+    .form-container{
+        height: 700px;
+    }
+    .footer{
+        height: 18vh;
+    }
+}
+@media screen and (max-width:550px) {
+    .form-container img{
+        width: 200px;
+    }
 }
 @media screen and (max-width:500px) {
     .row3 label{
@@ -799,6 +890,24 @@ input[type=submit] {
     }
     .row3{
         width: 80%;
+    }
+    .form-container img{
+        width: 180px;
+    }
+}
+@media screen and (max-width:450px) {
+    .form-container img{
+        display: none;
+    }
+    .form-container{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    #main-contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 

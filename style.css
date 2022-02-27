@@ -83,6 +83,44 @@ main {
     margin: 5% 3%;
     font-size: 1rem;
 }
+.footer{
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(144deg,#000000, #110750 50%,#240272);
+    color: #dfdede;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+.footer-col img{
+    width: 90%;
+}
+.footer-col{
+    text-align: center;
+}
+.footer-col > * {
+    margin-top: 10px;
+}
+.footer-col h2{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.footer-col ul{
+    list-style: none;
+    display: inline-flex;
+}
+.footer-col ul li a{
+    color: #50a7f8 ;
+    margin: 0 10px;
+}
+#submit{
+    background-color: #50a7f8;
+    color: #FFFFFF;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+}
+/* ------------------------------- Index.html --------------------------------------- */
 .promo{
     text-align: center;
     padding-bottom: 30px;
@@ -216,43 +254,6 @@ main {
       display: inline-block;
       color: #50a7f8;
   }
-.footer{
-    width: 100%;
-    height: 30vh;
-    background-image: linear-gradient(144deg,#000000, #110750 50%,#240272);
-    color: #dfdede;
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-}
-.footer-col img{
-    width: 90%;
-}
-.footer-col{
-    text-align: center;
-}
-.footer-col > * {
-    margin-top: 10px;
-}
-.footer-col h2{
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-.footer-col ul{
-    list-style: none;
-    display: inline-flex;
-}
-.footer-col ul li a{
-    color: #50a7f8 ;
-    margin: 0 10px;
-}
-#submit{
-    background-color: #50a7f8;
-    color: #FFFFFF;
-    padding: 8px 10px;
-    border-radius: 8px;
-    border: 0px;
-    cursor: pointer;
-}
 /* -------------------------------- Login.html -------------------------------------------------------------------- */
 #login{
     display: flex;
@@ -378,7 +379,7 @@ form .row .input input:focus-visible{
 .submit-registro{
     display: inline-flex;
     justify-content: flex-start;
-    width: 50%;
+    width: 40%;
 }
 .registro .submit-registro input{
     background-color: #50a7f8;
@@ -467,7 +468,7 @@ form .row1 .input input:focus-visible{
     max-height: 100vh;
 }
 .desc1 h1{
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: bold;
     margin-bottom: 0px;
 }
@@ -778,6 +779,9 @@ input[type=submit] {
         grid-template-rows: 1fr 1fr 3fr 1fr;
         margin-top: -20px;
         max-height: 120vh;
+    }
+    .desc1 h1{
+        font-size: 2rem;
     }
     .ban-servicios{
         padding-top: 10vh;

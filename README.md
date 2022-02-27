@@ -1,3 +1,3 @@
 # Simplicity
-HumanResourcesApp corporative website.
+HumanResourcesApp website.
 This is an studentes project.

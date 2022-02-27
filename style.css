@@ -10,7 +10,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 12vh;
+    min-height: 14vh;
     /* background-image: linear-gradient(144deg,#07010c, #201279 50%,#02085a); */
     background-color: #16096e;
 }
@@ -139,7 +139,7 @@ main {
 .valoraciones{
     background-color: #f4f4f5;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     text-align: center;
 }
 .valoraciones h2{
@@ -218,7 +218,7 @@ main {
   }
 .footer{
     width: 100%;
-    height: 21vh;
+    height: 30vh;
     background-image: linear-gradient(144deg,#000000, #110750 50%,#240272);
     color: #dfdede;
     display: grid;
@@ -254,18 +254,17 @@ main {
     cursor: pointer;
 }
 /* -------------------------------- Login.html -------------------------------------------------------------------- */
+#login{
+    display: flex;
+    justify-content: center;
+}
 .login{
     display: flex;
     flex-direction: column;
-    width: 30%;
-    margin: auto;
     height: auto;
-    align-items: flex-start;
-    padding: 50px 0px;
-}
-.login #logo{
-    display: inline-flex;
-    align-self: start;
+    width: 80%;
+    align-items: center;
+    padding-top: 20px;
 }
 .login a, .login i{
     font-size: 2rem;
@@ -305,6 +304,10 @@ form .row .input input:focus {
 form .row .input input:focus-visible{
     outline: none;
 }
+.submit{
+    margin: auto;
+    padding-top: 10px;
+}
 .submit input{
     background-color: #50a7f8;
     color: #FFFFFF;
@@ -315,9 +318,6 @@ form .row .input input:focus-visible{
 }
 .row p{
     color: #969494;
-    float: left; 
-    margin-left: 110px;
-    margin-top: 20px;
 }
 .row ul{
     list-style: none;
@@ -350,18 +350,23 @@ form .row .input input:focus-visible{
     font-size: 0.7rem;
 }
 /* ----------------------------- Register.html  ------------------------------------------------------------------- */
+#registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 .registro{
     display: flex;
     flex-direction: column;
-    width: 30%;
-    margin: auto;
+    width: 60%;
     height: auto;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px 0px;
 }
 .registro #logo{
     display: inline-flex;
-    align-self: start;
+    align-self: center;
 }
 .registro a, .registro i{
     font-size: 1.8rem;
@@ -370,7 +375,12 @@ form .row .input input:focus-visible{
     text-decoration: none;
     font-family: 'Rowdies', cursive;
 }
-.registro .submit input{
+.submit-registro{
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+.registro .submit-registro input{
     background-color: #50a7f8;
     color: #FFFFFF;
     border: none;
@@ -381,6 +391,72 @@ form .row .input input:focus-visible{
 .registro a#enlace{
     font-size: 0.8rem;
 }
+form .row1 .label{
+    width: 100%;
+    color: #666666;
+}
+form .row1 .label a{
+    font-size: 0.65rem;
+    color: #50a7f8;
+    margin-left: 90px;
+}
+form .row1 .input input{
+    border-radius: 10px;
+    background-color: #f5f3f3;
+    border: none;
+    height: 2.2rem;
+    color: #dfdede;
+}
+input::placeholder{
+    color: #969494;
+    padding-left: 10px;
+}
+form .row1 .input input:focus {
+    border: 1px solid #50a7f8;
+    color: #292929;
+    background-color: #FFFFFF;
+}
+form .row1 .input input:focus-visible{
+    outline: none;
+}
+.submit{
+    margin: auto;
+    padding-top: 10px;
+}
+.submit input{
+    background-color: #50a7f8;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+}
+.row1 p{
+    color: #969494;
+}
+.row1 ul{
+    list-style: none;
+    display: inline-flex;
+}
+.row1 ul li{
+    width: 100px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #9b9b9b;
+    border-radius: 10px;
+    margin-left: 25px;
+    position: relative;
+}
+.row1 ul li:hover{
+    background-color: #e2e2e2;
+}
+.row1 ul li a i{
+    text-align: center;
+    padding-left: 25px;
+    position: absolute;
+    margin-top: -5px;
+}
+
 /* --------------------- servicios.html  ------------------------------------- */
 .desc1{
     display: grid;
@@ -426,8 +502,9 @@ form .row .input input:focus-visible{
 }
 .promo-servicios{
     width: 80%;
-    padding-top: 10vh;
     margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
 }
 .promo-servicios h1{
     font-size: 1.5rem;
@@ -441,7 +518,7 @@ form .row .input input:focus-visible{
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 80%;
-    height: 120vh;
+    min-height: 125vh;
     margin: auto;
     text-align: center;
     align-items: center;
@@ -453,6 +530,7 @@ form .row .input input:focus-visible{
     box-shadow: 8px 16px 28px -10px rgba(91,66,243,0.72);
     min-width: 300px;
     min-height: 350px;
+    margin-bottom: 10vh;
 }
 .service img{
     height: 35vh;
@@ -497,7 +575,7 @@ form .row .input input:focus-visible{
     max-width: 1200px;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 2fr;
 }
 .calculadora h1{
     font-size: 1.6rem;
@@ -646,6 +724,9 @@ input[type=submit] {
         cursor: pointer;
         margin-left: 5vh;
     }
+    .footer{
+        height: 32vh;
+    }
 }
 
 @media  screen and (max-width:960px) {
@@ -715,7 +796,13 @@ input[type=submit] {
         font-size: 1rem;
     }
     .calculadora{
-        height: 40vh;
+        min-height: 40vh;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .valoraciones{
+        min-height: 110vh;
     }
 }
 
@@ -757,11 +844,8 @@ input[type=submit] {
     .grid-servicios{
     max-width: 100%;
     }
-    .login{
-        margin-left: 25%;
-    }
     .footer{
-        height: 22vh;
+        height: 35vh;
     }
     .footer-col h2{
         font-size: 0.9rem;
@@ -771,6 +855,12 @@ input[type=submit] {
     }
     .form-container img{
         width: 360px;
+    }
+    .promo h1{
+        font-size: 2rem;
+    }
+    .submit-registro {
+        width: 80%;
     }
 }
 @media screen and (max-width:760px) {
@@ -794,7 +884,7 @@ input[type=submit] {
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
         max-width: 50%;
-        height: 200vh;
+        min-height: 200vh;
     }
     .ban p{
         font-size: 0.8rem;
@@ -803,22 +893,43 @@ input[type=submit] {
         min-height: 36  0px;
         margin-bottom: 30px;
     }
-    .login{
-        margin-left: 20%;
-    }
     .cards{
         grid-template-columns: 1fr;
         padding-bottom: 20px;
         margin: 0 27%;
     }
     .valoraciones{
-        height: 110vh;
+        height: 190vh;
     }
     .form-container img{
         width: 280px;
     }
+    .footer{
+        height: 38vh;
+    }
+    .login .row{
+        width: 100%;
+    }
+    .login{
+        text-align: center;
+    }
+    .row .label{
+        text-align: start;
+        margin-left: 15%;
+    }
+    .row ul li a i {
+        margin-left: -40px;
+    }
 }
-
+@media screen and (max-width:611px) {
+    .row .label{
+        text-align: start;
+        margin-left: 20%;
+    }
+    .row ul li a i {
+        margin-left: -25px;
+    }
+}
 @media screen and (max-width:610px) {
     .logo a{
         font-size: 1rem;
@@ -876,12 +987,19 @@ input[type=submit] {
         height: 700px;
     }
     .footer{
-        height: 18vh;
+        height: 30vh;
     }
 }
 @media screen and (max-width:550px) {
     .form-container img{
         width: 200px;
+    }
+    .row .label{
+        text-align: start;
+        margin-left: 12%;
+    }
+    .row ul li a i {
+        margin-left: -20px;
     }
 }
 @media screen and (max-width:500px) {
@@ -908,6 +1026,26 @@ input[type=submit] {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .row .label{
+        text-align: start;
+        margin-left: 0px;
+    }
+    .row ul li a i {
+        margin-left: 0px;
+    }
+    .login{
+        text-align: start;
+        width: 90%;
+    }
+    .submit{
+        width: 60%;
+    }
+    .login #logo{
+        margin-left: -80px;
+    }
+    .texto-pequenyo{
+        margin-left: -80px;
     }
 }
 
